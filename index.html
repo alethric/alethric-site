@@ -718,6 +718,13 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
 </footer>
 
 <script>
+  // Force video autoplay
+  const heroVideo = document.querySelector('.hero-video');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.play().catch(function() {});
+  }
+
   // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
