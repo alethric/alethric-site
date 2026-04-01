@@ -51,8 +51,8 @@ nav {
 }
 .nav-logo {
   font-family: 'DM Mono', monospace;
-  font-size: 0.9375rem;
-  font-weight: 500;
+  font-size: 1.125rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--ink);
   text-decoration: none;
@@ -210,14 +210,14 @@ nav {
 
 /* TACITOPS — LIGHT WITH GOLD */
 .tacitops-section { background: var(--bg); border-bottom: 1px solid var(--border); }
-.tacitops-eyebrow { color: var(--tacit-gold); font-size: 0.75rem; font-weight: 500; }
+.tacitops-eyebrow { color: var(--tacit-gold); font-size: 0.85rem; font-weight: 700; }
 .tacitops-eyebrow::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-.tacitops-accent { font-weight: 300; color: var(--tacit-gold); }
+.tacitops-accent { font-weight: 400; color: var(--tacit-gold); }
 .tacitops-sub { font-size: 0.9875rem; color: var(--ink-60); margin-top: 1.5rem; max-width: 50ch; line-height: 1.85; font-weight: 300; }
 .tacitops-grid { border-color: var(--border); }
 .tacitops-pillar { background: var(--bg); border-right-color: var(--border); }
 .tacitops-pillar:hover { background: var(--bg-mid); }
-.tacitops-pillar-eyebrow { color: var(--tacit-gold); font-size: 0.65rem; font-weight: 500; }
+.tacitops-pillar-eyebrow { color: var(--tacit-gold); font-size: 0.75rem; font-weight: 700; }
 .tacitops-pillar-title { color: var(--ink); }
 .tacitops-pillar-body { color: var(--ink-60); }
 
@@ -428,9 +428,7 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="hero-bg.mp4" type="video/mp4">
-    </video>
+    <video class="hero-video" src="hero-bg.mp4" autoplay muted loop playsinline preload="auto"></video>
     <div class="hero-video-overlay"></div>
     <!-- P&ID schematic (commented out while testing video)
     <svg viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
