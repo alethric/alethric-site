@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 110%; }
+html { scroll-behavior: smooth; font-size: 110%; scroll-padding-top: 5rem; }
 
 :root {
   --bg:        #FFFFFF;
@@ -46,9 +46,9 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3rem;
   border-bottom: 1px solid var(--border);
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.40);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 .nav-logo {
   font-family: 'DM Mono', monospace;
@@ -62,7 +62,8 @@ nav {
 .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
 .nav-links a {
   font-family: 'DM Mono', monospace;
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--ink);
   text-decoration: none;
@@ -72,10 +73,10 @@ nav {
 .btn-primary {
   font-family: 'DM Mono', monospace;
   font-size: 0.6875rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  background: var(--steel-btn);
+  background: #0E0E0E;
   border: none;
   padding: 0.625rem 1.5rem;
   border-radius: 6px;
@@ -169,12 +170,14 @@ nav {
 }
 .hero-sub strong { color: var(--ink); font-weight: 500; }
 .hero-ctas { display: flex; gap: 1rem; align-items: center; }
+.hero-cta { font-size: 1rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 
 /* SHARED LIGHT */
 .section-wrap { max-width: 1400px; margin: 0 auto; padding: 6rem 3rem; }
 .eyebrow-light {
   font-family: 'DM Mono', monospace;
-  font-size: 0.575rem;
+  font-size: 0.85rem;
+  font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-20);
@@ -230,7 +233,8 @@ nav {
 .how-section { background: #0A0A0A; border-bottom: 1px solid rgba(255,255,255,0.07); }
 .eyebrow-dark {
   font-family: 'DM Mono', monospace;
-  font-size: 0.575rem;
+  font-size: 0.85rem;
+  font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(238,235,228,0.7);
@@ -255,7 +259,7 @@ nav {
 /* CALLOUT — DARK */
 .callout-section { background: #0A0A0A; border-bottom: 1px solid rgba(255,255,255,0.07); }
 .callout-inner { max-width: 1400px; margin: 0 auto; padding: 5rem 3rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4rem; }
-.callout-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.575rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(238,235,228,0.7); margin-bottom: 1.25rem; }
+.callout-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(238,235,228,0.7); margin-bottom: 1.25rem; }
 .callout-headline { font-size: clamp(1.375rem, 2.25vw, 2rem); font-weight: 300; letter-spacing: -0.02em; color: #EEEBE4; line-height: 1.25; margin-bottom: 1.25rem; }
 .callout-sub { font-size: 0.9375rem; color: rgba(238,235,228,0.92); max-width: 56ch; line-height: 1.8; font-weight: 300; }
 .btn-dark { font-family: 'DM Mono', monospace; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.06em; color: #0A0A0A; background: #D8D2C8; border: none; padding: 0.625rem 1.5rem; border-radius: 6px; cursor: pointer; text-decoration: none; transition: opacity 0.2s; display: inline-block; white-space: nowrap; }
@@ -264,7 +268,7 @@ nav {
 /* ABOUT — LIGHT */
 .about-section { background: var(--bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .about-inner { max-width: 1400px; margin: 0 auto; padding: 8rem 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 9rem; align-items: start; }
-.about-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.575rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--steel); margin-bottom: 2rem; }
+.about-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--steel); margin-bottom: 2rem; }
 .about-headline { font-size: clamp(1.625rem, 2.5vw, 2.375rem); font-weight: 300; letter-spacing: -0.02em; color: var(--ink); line-height: 1.2; }
 .about-text { font-size: 1rem; color: var(--ink-60); line-height: 1.9; font-weight: 300; }
 .about-text + .about-text { margin-top: 1.5rem; }
@@ -345,13 +349,14 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
   }
   .nav-links.open { display: flex; }
   .nav-links.open .nav-cta-mobile { display: list-item; }
+  .nav-links .btn-primary { color: #FFFFFF; }
   nav > .btn-primary { display: none; }
 
   /* HERO */
   .hero { padding: 0 1.5rem 3.5rem; min-height: 85vh; }
   .hero-h1 { font-size: clamp(2rem, 8vw, 3rem); margin-bottom: 2rem; }
-  .hero-line1 { white-space: normal; }
-  .hero-line2 { display: inline; }
+  .hero-line1 { white-space: nowrap; }
+  .hero-line2 { display: block; }
   .hero-content { max-width: 100%; }
   .hero-eyebrow { margin-bottom: 2rem; }
   .hero-sub { font-size: 0.9375rem; margin-bottom: 2rem; }
@@ -415,8 +420,7 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
 <nav>
   <a href="#" class="nav-logo">ALETHRIC<span class="dot">.</span></a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#why">Why</a></li>
-    <li><a href="#tacitops">TacitOps</a></li>
+    <li><a href="#tacitops">Product</a></li>
     <li><a href="#about">About</a></li>
     <li class="nav-cta-mobile"><a href="#contact" class="btn-primary" style="width:100%;text-align:center;">Get in touch</a></li>
   </ul>
@@ -575,8 +579,7 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
     <!-- <p class="hero-sub">AI that guides industrial technicians through repairs in real time, capturing what they know so the next crew doesn't start from zero.</p> -->
     <p class="hero-sub">The right knowledge, at the right moment, at the asset. From manuals, equipment history, and your most experienced people, available to your whole team in real time.</p>
     <div class="hero-ctas">
-      <a href="#tacitops" class="btn-primary">Explore Product</a>
-      <a href="#about" class="btn-outline">About Alethric</a>
+      <a href="#contact" class="btn-primary hero-cta">Reduce Your MTTR</a>
     </div>
   </div>
 
@@ -673,12 +676,7 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
     </div>
     <div class="fade-up">
       <p class="about-text">Alethric was founded at the intersection of a decade of industrial operations and graduate-level AI research. We understand the physical world because we have worked in it. And we understand AI because we have built it.</p>
-      <p class="about-text">We spent years on mine sites and plant floors before building AI systems at MILA. TacitOps exists because we lived the problem before we solved it.</p>
-      <!-- <div class="about-stats">
-        <div><div class="stat-num">10yr+</div><div class="stat-label">Industrial operations</div></div>
-        <div><div class="stat-num">MILA</div><div class="stat-label">AI research lab</div></div>
-        <div><div class="stat-num">Mtl</div><div class="stat-label">Montréal, Canada</div></div>
-      </div> -->
+      <p class="about-text">Our team brings together years of hands-on industrial operations and graduate AI research from one of the world's leading machine learning labs. TacitOps exists because we lived the problem before we had the tools to solve it.</p>
     </div>
   </div>
 </div>
