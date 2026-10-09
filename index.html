@@ -329,6 +329,17 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
 .nav-toggle span { display: block; width: 20px; height: 1.5px; background: var(--ink); margin: 5px 0; transition: 0.3s; }
 
+.tacitops-pillar-eyebrow {
+  min-height: 3.25rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.tacitops-pillar-title {
+  margin-top: 0;
+}
+
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
   /* NAV */
@@ -420,7 +431,7 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
 <nav>
   <a href="#" class="nav-logo">ALETHRIC<span class="dot">.</span></a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#tacitops">Product</a></li>
+    <!-- <li><a href="#tacitops">Product</a></li> -->
     <li><a href="#about">About</a></li>
     <li class="nav-cta-mobile"><a href="#contact" class="btn-primary" style="width:100%;text-align:center;">Get in touch</a></li>
   </ul>
@@ -575,9 +586,9 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
     end of commented out schematic -->
   </div>
   <div class="hero-content">
-    <h1 class="hero-h1"><span class="hero-line1">The Intelligence Layer</span><span class="hero-line2"> for the <em>Physical World.</em></span></h1>
+    <h1 class="hero-h1"><span class="hero-line1">AI guidance for</span><span class="hero-line2"> <em>industrial maintenance.</em></span></h1>
     <!-- <p class="hero-sub">AI that guides industrial technicians through repairs in real time, capturing what they know so the next crew doesn't start from zero.</p> -->
-    <p class="hero-sub">The right knowledge, at the right moment, at the asset. From manuals, equipment history, and your most experienced people, available to your whole team in real time.</p>
+    <p class="hero-sub">The right context, at the asset, when the technician needs it.</p>
     <div class="hero-ctas">
       <a href="#contact" class="btn-primary hero-cta">Reduce Your MTTR</a>
     </div>
@@ -592,80 +603,58 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
       <p class="why-quote">Most AI stops at the screen.<span class="accent">Alethric goes to the machine.</span></p>
     </div>
     <div class="fade-up">
-      <p class="why-body">The gap between a sensor alert and a resolved problem is where we operate. We build systems that encode the precise, procedural knowledge of experienced technicians and translate it into action at the point of intervention. Not just describe it.</p>
+      <p class="why-body">We help technicians move from equipment problem to resolved intervention with the right context, at the asset, in real time.</p>
     </div>
   </div>
 </div>
 
-<!-- TACITOPS — DARK -->
+<!-- PRODUCT THESIS -->
 <section id="tacitops" class="tacitops-section">
   <div class="section-wrap">
-    <div class="eyebrow-light tacitops-eyebrow">TacitOps</div>
-    <h2 class="h2-light">Reduce Mean Time to Repair.<br><strong class="tacitops-accent">Give every technician access to the knowledge they need.</strong></h2>
-    <p class="tacitops-sub">TacitOps is an AI guidance system for industrial maintenance and operations, deployed at the asset.</p>
+
+    <h2 class="h2-light">
+      <span class="tacitops-accent">Understand the asset.</span><br>
+      <span class="tacitops-accent">Understand the procedure.</span><br>
+      <span class="tacitops-accent">Understand the work.</span>
+    </h2>
+
     <div class="pillars-grid tacitops-grid">
       <div class="pillar tacitops-pillar fade-up">
-        <div class="pillar-eyebrow tacitops-pillar-eyebrow">Knowledge capture</div>
-        <h3 class="pillar-title tacitops-pillar-title">The unspoken expertise of your best technicians, structured.</h3>
-        <p class="pillar-body tacitops-pillar-body">Every intervention, decision, and deviation captured in real time using voice and vision AI, then converted into records that grow more valuable with every session.</p>
+        <div class="pillar-eyebrow tacitops-pillar-eyebrow">Diagnose faster.</div>
+        <h3 class="pillar-title tacitops-pillar-title">
+          Surface relevant history, failure context, and documentation.
+        </h3>
       </div>
+
       <div class="pillar tacitops-pillar fade-up">
-        <div class="pillar-eyebrow tacitops-pillar-eyebrow">Edge deployment</div>
-        <h3 class="pillar-title tacitops-pillar-title">Real-time guidance where connectivity cannot be assumed.</h3>
-        <p class="pillar-body tacitops-pillar-body">Agentic workflows run at the industrial edge. No cloud dependency. TacitOps operates in the environment that industrial work actually happens in. Online or offline.</p>
+        <div class="pillar-eyebrow tacitops-pillar-eyebrow">Guide the work.</div>
+        <h3 class="pillar-title tacitops-pillar-title">
+          Deliver procedural context where the work happens.
+        </h3>
       </div>
+
       <div class="pillar tacitops-pillar fade-up">
-        <div class="pillar-eyebrow tacitops-pillar-eyebrow">Compounding intelligence</div>
-        <h3 class="pillar-title tacitops-pillar-title">Every session makes the system smarter for the next one.</h3>
-        <p class="pillar-body tacitops-pillar-body">Structured intervention records are indexed into a shared knowledge base. Future sessions surface matched historical context across every technician and every site.</p>
+        <div class="pillar-eyebrow tacitops-pillar-eyebrow">Capture the work.</div>
+        <h3 class="pillar-title tacitops-pillar-title">
+          Turn each intervention into knowledge for the next one.
+        </h3>
       </div>
+
     </div>
+
   </div>
 </section>
 
-<!-- HOW IT WORKS — DARK -->
+<!-- BRIDGE — DARK -->
 <section class="how-section">
   <div class="section-wrap">
-    <div class="eyebrow-dark">How it works</div>
-    <h2 class="h2-dark">From intervention<br><strong>to structured intelligence.</strong></h2>
-    <div class="steps-grid">
-      <div class="step fade-up">
-        <div class="step-num">01</div>
-        <h4 class="step-title">Technician initiates a session</h4>
-        <p class="step-body">A maintenance technician activates TacitOps on a mobile device. Real-time voice and vision capture begins. No manual logging, no forms to fill.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-num">02</div>
-        <h4 class="step-title">AI guides the intervention</h4>
-        <p class="step-body">The system provides step-by-step guidance, drawing from the knowledge base of past interventions. It flags known failure modes, recommends parts, and warns about risks based on what previous technicians encountered on the same asset.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-num">03</div>
-        <h4 class="step-title">Intervention is captured and structured</h4>
-        <p class="step-body">Every action and decision is converted into a structured record: asset, failure mode, repair sequence, and outcome. Indexed and searchable across the operation.</p>
-      </div>
-      <div class="step fade-up">
-        <div class="step-num">04</div>
-        <h4 class="step-title">The next technician starts where the last one finished</h4>
-        <p class="step-body">Each completed record enriches the shared knowledge base. The more the system is used, the more precisely it can guide the next technician facing the same problem.</p>
-      </div>
-    </div>
+    <div class="eyebrow-dark">Built for the field</div>
+    <h2 class="h2-dark">
+      See the problem.<br>
+      <strong>Guide the intervention.</strong>
+    </h2>
   </div>
 </section>
-
-<!-- CALLOUT — DARK -->
-<div class="callout-section">
-  <div class="callout-inner">
-    <div class="fade-up">
-      <div class="callout-eyebrow">Our product</div>
-      <div class="callout-headline">TacitOps is live and accepting pilot partners.</div>
-      <p class="callout-sub">Built for mining operations first. Expanding to oil and gas, heavy manufacturing, and energy.</p>
-    </div>
-    <div class="fade-up">
-      <a href="https://tacitops.ai" target="_blank" rel="noopener" class="btn-tacit">Visit TacitOps.ai</a>
-    </div>
-  </div>
-</div>
 
 <!-- ABOUT — LIGHT -->
 <div id="about" class="about-section">
@@ -675,8 +664,8 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
       <h2 class="about-headline">Built by people who have worked where the machines actually are.</h2>
     </div>
     <div class="fade-up">
-      <p class="about-text">Alethric was founded at the intersection of a decade of industrial operations and graduate-level AI research. We understand the physical world because we have worked in it. And we understand AI because we have built it.</p>
-      <p class="about-text">Our team brings together years of hands-on industrial operations and graduate AI research from one of the world's leading machine learning labs. TacitOps exists because we lived the problem before we had the tools to solve it.</p>
+      <p class="about-text">Alethric was founded at the intersection of a decade of industrial operations and AI research. We understand the physical world because we have worked in it. And we understand AI because we have built it.</p>
+      <p class="about-text">Our team brings together years of hands-on industrial operations and AI research from one of the world's leading machine learning labs.</p>
     </div>
   </div>
 </div>
@@ -685,7 +674,7 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
 <section id="contact" class="cta-section">
   <div class="contact-wrap fade-up">
     <h2 class="cta-headline">Let's talk.</h2>
-    <p class="cta-sub">If the wrong failure at the wrong moment can stop your operation, we should talk.</p>
+    <p class="cta-sub">Reduce the time between equipment failure and resolved intervention.</p>
     <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="8a06c62e-dbfe-41f9-8833-875acddede7e">
       <input type="text" name="name" placeholder="Name" required>
@@ -704,14 +693,13 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
 <footer>
   <div>
     <div class="footer-logo">ALETHRIC<span class="dot">.</span></div>
-    <div class="footer-sub">Intelligence layer for the physical world</div>
+    <div class="footer-sub">AI guidance for industrial maintenance.</div>
   </div>
   <ul class="footer-links">
-    <li><a href="#tacitops">TacitOps</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="footer-copy">© 2026 Alethric Technologies Inc. | Montréal</div>
+  <div class="footer-copy">© 2026 Alethric Technologies | Montréal</div>
 </footer>
 
 <script>
