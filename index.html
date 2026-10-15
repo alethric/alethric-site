@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alethric Inc. | Intelligence Layer for the Physical World</title>
+<title>Alethric | AI guidance for industrial maintenance</title>
+<meta name="description" content="Alethric is developing multimodal AI guidance for industrial maintenance technicians in real time.">
+<link rel="canonical" href="https://www.alethric.com/">
+<link rel="alternate" hreflang="en" href="https://www.alethric.com/">
+<link rel="alternate" hreflang="fr-CA" href="https://www.alethric.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://www.alethric.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alethric | AI guidance for industrial maintenance">
+<meta property="og:description" content="Alethric is developing multimodal AI guidance for industrial maintenance technicians in real time.">
+<meta property="og:url" content="https://www.alethric.com/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,6 +69,16 @@ nav {
 }
 .nav-logo .dot { color: var(--steel); }
 .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+
+/* Center the About navigation link */
+@media (min-width: 769px) {
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .nav-links a {
   font-family: 'DM Mono', monospace;
   font-size: 0.8125rem;
@@ -423,19 +442,36 @@ footer { background: #060606; border-top: 1px solid rgba(255,255,255,0.07); padd
   .pillar { padding: 2rem 1.5rem; }
   .step { padding: 2rem 1.5rem; }
 }
+
+/* BILINGUAL NAV */
+.nav-actions { display: flex; align-items: center; gap: 1.4rem; margin-left: auto; }
+.language-switcher { display: flex; align-items: center; gap: .45rem; font-family: 'DM Mono', monospace; font-size: .7rem; font-weight: 500; white-space: nowrap; }
+.language-switcher a { color: var(--ink-40); text-decoration: none; padding: .2rem; }
+.language-switcher a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: .27rem; }
+.language-switcher a:hover, .language-switcher a:focus-visible { color: var(--steel); }
+.language-switcher span { color: var(--ink-20); }
+@media (max-width: 768px) {
+  .nav-actions { gap: .5rem; }
+  .nav-actions > .btn-primary { display: none; }
+  .nav-toggle { margin-left: .5rem; }
+}
+@media (max-width: 400px) { .language-switcher { font-size: .65rem; } }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">ALETHRIC<span class="dot">.</span></a>
+  <a href="/" class="nav-logo">ALETHRIC<span class="dot">.</span></a>
   <ul class="nav-links" id="navLinks">
     <!-- <li><a href="#tacitops">Product</a></li> -->
     <li><a href="#about">About</a></li>
     <li class="nav-cta-mobile"><a href="#contact" class="btn-primary" style="width:100%;text-align:center;">Get in touch</a></li>
   </ul>
-  <a href="#contact" class="btn-primary">Get in touch</a>
+  <div class="nav-actions">
+    <div class="language-switcher" aria-label="Language"><a href="/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a><span aria-hidden="true">|</span><a href="/fr/" lang="fr" hreflang="fr-CA" aria-label="Français">FR</a></div>
+    <a href="#contact" class="btn-primary">Get in touch</a>
+  </div>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
